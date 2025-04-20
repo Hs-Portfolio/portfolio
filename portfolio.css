@@ -1,0 +1,241 @@
+
+@media (min-width: 769px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .portfolio-page {
+    background: url('images/Background.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .white-box {
+    width: 90%;
+    height: 820px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-sticker {
+    position: absolute;
+    top: -80px;
+    right: -90px;
+    width: 900px;
+    height: auto;
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 130px;
+  }
+
+  .slider-track {
+    display: flex;
+    gap: 0px;
+    transition: transform 0.5s ease-in-out;
+    touch-action: pan-y;
+    will-change: transform;
+  }
+
+  .slide {
+    flex: 0 0 calc(100% / 3 - 20px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide img {
+    width: 380px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 60px;
+    border: 3px solid #ccc;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .slide span {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #333;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10%;
+    z-index: 2;
+    transition: background-color 0.2s ease;
+  }
+
+  .arrow.left {
+    left: 0;
+  }
+
+  .arrow.right {
+    right: 0;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .portfolio-page {
+    background: url('images/Background.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .white-box {
+    width: 90%;
+    height: 450px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-sticker {
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    width: 400px;
+    height: auto;
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+
+ .slider-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+  .slide {
+    flex: 0 0 calc(100% / 3 - 20px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide img {
+    width: 230px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 3px solid #ccc;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .slide span {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #333;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 0%;
+    transform: translateY(0%);
+    border: none;
+    font-size: 0rem;
+    cursor: pointer;
+    padding: 0px 0px;
+    border-radius: 0%;
+    z-index: 0;
+    transition: background-color 0s ease;
+  }
+
+  .arrow.left {
+    left: 0;
+  }
+
+  .arrow.right {
+    right: 0;
+  }
+}
+

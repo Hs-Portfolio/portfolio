@@ -1,0 +1,103 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set full-page background color and font */
+html, body {
+  height: 100%;
+  background-color: #4a92ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center content vertically and horizontally */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure it takes full viewport height */
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center avatar and other content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Main heading */
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.02em;
+}
+
+/* Subheading */
+h2 {
+  font-size: 1.2em;
+   margin-bottom: 0.01em;
+  color: #ffff00; /* Yellow color */
+  font-weight: bold;
+  font-family: 'Fredoka', sans-serif; /* Apply Fredoka font */
+}
+
+/* Avatar image styling */
+.avatar {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+  box-shadow: none;
+  /* Adjust to move the avatar 10px to the right */
+  margin-left: 10px; 
+}
+
+/* ENTER button container styling */
+.enter-button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically */
+  height: 100%; /* Ensures the container takes up full height */
+  width: 100%; /* Ensures the container takes up full width */
+}
+
+/* ENTER button styling */
+.enter-button {
+  display: inline-block;
+  padding: 12px 40px; /* Increased padding for a bigger button */
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* White text */
+  border: 2px solid #ffffff; /* Sharper borders */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px; /* Sharper borders */
+  font-size: 1.5em; /* Larger text */
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.enter-button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #4a92ff; /* Background color text on hover */
+}
+
+
+/* Subtext styling */
+.subtext {
+  font-size: 0.9em; /* Slightly larger text */
+  color: #393a3b; /* White text color */
+  text-align: center; /* Centers the text */
+  margin-top: 30px; /* Adds space between the button and the text */
+   font-weight: bold; /* Makes the text bold */
+
+
+
+
+
+}
